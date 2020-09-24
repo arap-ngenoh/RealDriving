@@ -1,0 +1,792 @@
+2018-09-26 00:07:05.112 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 00:07:44.665 [JavaFX Application Thread] ERROR real.database.DatabaseHandler - {}
+java.lang.NullPointerException: null
+	at real.database.DatabaseHandler.getDBTables(DatabaseHandler.java:128) ~[RealDriving.jar:1.0]
+	at real.database.DatabaseHandler.inflateDB(DatabaseHandler.java:61) ~[RealDriving.jar:1.0]
+	at real.database.DatabaseHandler.<clinit>(DatabaseHandler.java:45) ~[RealDriving.jar:1.0]
+	at real.database.DataHelper.isMemberExists(DataHelper.java:49) ~[RealDriving.jar:1.0]
+	at newstudents.NewstudentController.save(NewstudentController.java:109) ~[RealDriving.jar:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:1.8.0_144]
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275) ~[?:1.8.0_144]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8413) ~[jfxrt.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:185) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485) ~[jfxrt.jar:?]
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_144]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+2018-09-26 00:07:44.702 [JavaFX Application Thread] ERROR real.database.DatabaseHandler - {}
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'spotlight'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:925) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1704) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1250) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2465) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2498) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2283) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:822) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:404) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:317) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_144]
+	at java.sql.DriverManager.getConnection(DriverManager.java:247) ~[?:1.8.0_144]
+	at real.database.DatabaseHandler.connect(DatabaseHandler.java:100) ~[RealDriving.jar:1.0]
+	at real.database.DatabaseHandler.getConnection(DatabaseHandler.java:106) ~[RealDriving.jar:1.0]
+	at real.database.DataHelper.isMemberExists(DataHelper.java:49) ~[RealDriving.jar:1.0]
+	at newstudents.NewstudentController.save(NewstudentController.java:109) ~[RealDriving.jar:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:1.8.0_144]
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275) ~[?:1.8.0_144]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8413) ~[jfxrt.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:185) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485) ~[jfxrt.jar:?]
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_144]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+2018-09-26 00:07:44.786 [JavaFX Application Thread] ERROR real.database.DatabaseHandler - {}
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'spotlight'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:925) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1704) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1250) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2465) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2498) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2283) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:822) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:404) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:317) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_144]
+	at java.sql.DriverManager.getConnection(DriverManager.java:247) ~[?:1.8.0_144]
+	at real.database.DatabaseHandler.connect(DatabaseHandler.java:100) ~[RealDriving.jar:1.0]
+	at real.database.DatabaseHandler.getConnection(DatabaseHandler.java:106) ~[RealDriving.jar:1.0]
+	at real.database.DataHelper.insertNewMember(DataHelper.java:25) ~[RealDriving.jar:1.0]
+	at newstudents.NewstudentController.save(NewstudentController.java:118) ~[RealDriving.jar:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:1.8.0_144]
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275) ~[?:1.8.0_144]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8413) ~[jfxrt.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:185) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485) ~[jfxrt.jar:?]
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_144]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+2018-09-26 00:08:50.073 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 00:09:22.850 [JavaFX Application Thread] ERROR real.database.DatabaseHandler - {}
+java.lang.NullPointerException: null
+	at real.database.DatabaseHandler.getDBTables(DatabaseHandler.java:128) ~[RealDriving.jar:1.0]
+	at real.database.DatabaseHandler.inflateDB(DatabaseHandler.java:61) ~[RealDriving.jar:1.0]
+	at real.database.DatabaseHandler.<clinit>(DatabaseHandler.java:45) ~[RealDriving.jar:1.0]
+	at real.database.DataHelper.isMemberExists(DataHelper.java:49) ~[RealDriving.jar:1.0]
+	at newstudents.NewstudentController.save(NewstudentController.java:109) ~[RealDriving.jar:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:1.8.0_144]
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275) ~[?:1.8.0_144]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8413) ~[jfxrt.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:185) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485) ~[jfxrt.jar:?]
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_144]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+2018-09-26 00:09:22.876 [JavaFX Application Thread] ERROR real.database.DatabaseHandler - {}
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'readriving'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:925) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1704) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1250) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2465) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2498) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2283) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:822) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:404) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:317) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_144]
+	at java.sql.DriverManager.getConnection(DriverManager.java:247) ~[?:1.8.0_144]
+	at real.database.DatabaseHandler.connect(DatabaseHandler.java:100) ~[RealDriving.jar:1.0]
+	at real.database.DatabaseHandler.getConnection(DatabaseHandler.java:106) ~[RealDriving.jar:1.0]
+	at real.database.DataHelper.isMemberExists(DataHelper.java:49) ~[RealDriving.jar:1.0]
+	at newstudents.NewstudentController.save(NewstudentController.java:109) ~[RealDriving.jar:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:1.8.0_144]
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275) ~[?:1.8.0_144]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8413) ~[jfxrt.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:185) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485) ~[jfxrt.jar:?]
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_144]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+2018-09-26 00:09:22.926 [JavaFX Application Thread] ERROR real.database.DatabaseHandler - {}
+com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'readriving'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1053) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:925) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1704) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1250) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2465) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2498) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2283) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:822) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:404) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:317) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[?:1.8.0_144]
+	at java.sql.DriverManager.getConnection(DriverManager.java:247) ~[?:1.8.0_144]
+	at real.database.DatabaseHandler.connect(DatabaseHandler.java:100) ~[RealDriving.jar:1.0]
+	at real.database.DatabaseHandler.getConnection(DatabaseHandler.java:106) ~[RealDriving.jar:1.0]
+	at real.database.DataHelper.insertNewMember(DataHelper.java:25) ~[RealDriving.jar:1.0]
+	at newstudents.NewstudentController.save(NewstudentController.java:118) ~[RealDriving.jar:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:1.8.0_144]
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275) ~[?:1.8.0_144]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8413) ~[jfxrt.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:185) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485) ~[jfxrt.jar:?]
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_144]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+2018-09-26 00:11:18.648 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 00:31:31.765 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 00:42:05.887 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 00:47:21.199 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 00:52:58.106 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 00:55:51.067 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 00:59:15.650 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:02:27.049 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:03:30.646 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:04:34.773 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:13:12.328 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:16:02.599 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:18:04.771 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:24:30.351 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:25:41.096 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:42:28.174 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:44:04.775 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:46:23.083 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:48:54.494 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 01:51:30.539 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 07:39:37.374 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 07:43:01.318 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 07:44:08.328 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 07:46:48.509 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 07:48:17.791 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 07:49:39.100 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 07:50:31.216 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 07:52:42.946 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:00:34.162 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:10:54.580 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:12:05.728 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:18:37.566 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:19:19.831 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:31:34.939 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:36:31.884 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:37:58.164 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:41:51.612 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:42:46.744 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:47:14.883 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:51:27.546 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 08:55:53.372 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 09:10:25.415 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 09:40:18.895 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 10:29:35.763 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 10:29:41.976 [JavaFX Application Thread] ERROR real.database.DatabaseHandler - {}
+java.lang.NullPointerException: null
+	at real.database.DatabaseHandler.getDBTables(DatabaseHandler.java:128) ~[RealDriving.jar:1.0]
+	at real.database.DatabaseHandler.inflateDB(DatabaseHandler.java:61) ~[RealDriving.jar:1.0]
+	at real.database.DatabaseHandler.<clinit>(DatabaseHandler.java:45) ~[RealDriving.jar:1.0]
+	at studentlist.MemberListController.loadData(MemberListController.java:90) ~[RealDriving.jar:1.0]
+	at studentlist.MemberListController.initialize(MemberListController.java:69) ~[RealDriving.jar:1.0]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2548) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3214) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3175) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3148) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3124) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:3104) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:3097) ~[jfxrt.jar:?]
+	at realdriving.FXMLDocumentController.centre(FXMLDocumentController.java:68) ~[RealDriving.jar:1.0]
+	at realdriving.FXMLDocumentController.studentlist(FXMLDocumentController.java:147) ~[RealDriving.jar:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:1.8.0_144]
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275) ~[?:1.8.0_144]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.control.MenuItem.fire(MenuItem.java:462) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.doSelect(ContextMenuContent.java:1405) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.ContextMenuContent$MenuItemContainer.lambda$createChildren$343(ContextMenuContent.java:1358) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485) ~[jfxrt.jar:?]
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_144]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+2018-09-26 10:30:49.905 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 10:35:05.405 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 10:41:30.503 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 10:46:58.319 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 10:48:28.490 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 10:50:15.454 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 10:53:21.764 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 10:55:38.383 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 10:57:06.959 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:01:12.457 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:02:47.956 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:07:00.450 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:08:50.754 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:10:11.022 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:11:21.117 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:13:38.451 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:27:16.013 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:29:17.021 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:30:57.870 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:33:27.717 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:35:01.886 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:35:52.106 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:37:10.978 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:39:05.122 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:40:06.549 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:43:02.028 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:44:47.540 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:46:19.313 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:47:06.126 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:47:54.431 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:48:41.006 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:50:03.658 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:52:34.487 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:53:46.484 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:56:48.313 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:58:02.183 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 11:59:31.060 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 12:01:15.400 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 12:05:05.745 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 12:11:43.475 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 12:13:54.390 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 12:15:01.184 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 12:32:00.547 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 12:40:54.899 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 12:43:37.911 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 12:44:41.436 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:06:32.549 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:07:13.520 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:08:21.056 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:10:17.698 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:12:19.278 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:27:32.244 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:31:18.480 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:32:47.803 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:34:14.661 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:44:00.047 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:44:42.145 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:46:03.594 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:48:42.064 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:49:53.223 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 13:51:38.842 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 14:05:05.477 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 14:05:51.769 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 14:11:23.554 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 14:34:22.838 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 14:59:10.102 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 15:04:56.762 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 15:08:39.804 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 15:15:24.440 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 15:18:49.985 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 15:23:24.682 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 15:29:20.669 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 15:33:45.165 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 15:45:08.839 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 16:10:25.761 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 16:14:13.645 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 16:19:31.401 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 16:35:30.136 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 16:45:03.296 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 16:52:01.786 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 17:27:55.180 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 17:40:11.745 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 17:51:10.501 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 17:55:59.168 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 17:57:24.550 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 17:58:12.933 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 17:59:39.444 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in 
+2018-09-26 18:13:40.469 [JavaFX Application Thread] ERROR real.database.DatabaseHandler - {}
+com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '12345' for key 'PRIMARY'
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_144]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_144]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:411) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.Util.getInstance(Util.java:386) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:1040) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4120) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:4052) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2503) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2664) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2794) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2155) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2458) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2375) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:2359) ~[mysql-connector-java-5.1.23-bin.jar:?]
+	at real.database.DataHelper.insertNewMember(DataHelper.java:37) ~[RealDriving.jar:1.0]
+	at newstudents.NewstudentController.save(NewstudentController.java:118) ~[RealDriving.jar:1.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_144]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_144]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:71) ~[?:1.8.0_144]
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_144]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_144]
+	at sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:275) ~[?:1.8.0_144]
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769) ~[jfxrt.jar:?]
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Node.fireEvent(Node.java:8413) ~[jfxrt.jar:?]
+	at javafx.scene.control.Button.fire(Button.java:185) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96) ~[jfxrt.jar:?]
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74) ~[jfxrt.jar:?]
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54) ~[jfxrt.jar:?]
+	at javafx.event.Event.fireEvent(Event.java:198) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485) ~[jfxrt.jar:?]
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762) ~[jfxrt.jar:?]
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295) ~[jfxrt.jar:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_144]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389) ~[jfxrt.jar:?]
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.View.notifyMouse(View.java:937) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method) ~[jfxrt.jar:?]
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191) ~[jfxrt.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_144]
+2018-09-26 19:46:19.321 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 20:00:11.347 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 20:01:59.059 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 20:02:51.241 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 20:05:37.744 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 20:44:32.840 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 21:07:46.613 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 21:11:39.320 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 21:14:21.370 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 21:18:47.492 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 22:14:52.523 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 22:17:15.325 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 22:19:20.100 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 22:26:07.524 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 22:27:26.071 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 22:28:20.415 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 22:43:25.600 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 23:14:32.857 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real
+2018-09-26 23:19:34.149 [JavaFX Application Thread] INFO  expense.L0gController - User successfully logged in real

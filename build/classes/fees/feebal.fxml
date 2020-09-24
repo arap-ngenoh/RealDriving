@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fees.FeebalController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="1041.0" styleClass="VBOX" stylesheets="@../newstudents/css.css">
+         <children>
+            <AnchorPane id="AnchorPane" fx:id="contentPane" prefHeight="471.0" prefWidth="1041.0" styleClass="VBOX" stylesheets="@../newstudents/css.css">
+               <children>
+                  <TableView fx:id="tableView" layoutX="2.0" layoutY="68.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="403.0" prefWidth="1039.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="67.0">
+                     <columnResizePolicy>
+                
+               </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="nameCol" prefWidth="247.0" text="Name" />
+                        <TableColumn fx:id="idCol" maxWidth="2800.0" prefWidth="109.0" text="Student ID" />
+                        <TableColumn fx:id="paidCol" prefWidth="87.0" text="Total Paid" />
+                        <TableColumn fx:id="totalcol" prefWidth="124.0" text="Amount To Be Paid" />
+                        <TableColumn fx:id="balbcol" prefWidth="65.0" text="Balance" />
+                        <TableColumn fx:id="categorycol" prefWidth="89.0" text="Category" />
+                     </columns>
+                     <contextMenu>
+                        <ContextMenu styleClass="table-context">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleMemberDelete" text="Delete" />
+                           </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+                  <MenuBar prefHeight="32.0" prefWidth="722.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#exportAsPDF" text="Export as PDF" />
+                              <MenuItem mnemonicParsing="false" onAction="#closeStage" text="Close" />
+                           </items>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+                  <HBox layoutX="3.0" layoutY="35.0" prefHeight="32.0" prefWidth="1032.0">
+                     <children>
+                        <Label prefHeight="31.0" prefWidth="228.0" text="Payment made between " />
+                        <DatePicker fx:id="datfom1" prefHeight="32.0" prefWidth="197.0" />
+                        <Label prefHeight="32.0" prefWidth="134.0" text="      And " />
+                        <DatePicker fx:id="datto1" prefHeight="31.0" prefWidth="174.0" />
+                        <Button mnemonicParsing="false" onAction="#select" prefHeight="32.0" prefWidth="147.0" text="Select" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

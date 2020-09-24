@@ -1,0 +1,1 @@
+{"nDaysWithoutFine":0,"finePerDay":0.0,"adminn":"kerich","pass":"1444afe8fb4810711349a9fc1a75b8b86e8e6ad8","username":"","password":"da39a3ee5e6b4b0d3255bfef95601890afd80709"}

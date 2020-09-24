@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tables>
+    <table-entry name="student" col-data="regnum int AUTO_INCREMENT,id varchar(200), fname varchar(200),names varchar(200),phone varchar(100),tdbnumber varchar(100) default null,pdlnumber varchar(100),dlnumber varchar(100) default null,fees integer NOT NULL,category varchar(100)  primary key(regnum,id)"/>
+    <table-entry name="fees" col-data=" id varchar(200) ,registration integer default null , vhire integer default null, paydate date, FOREIGN KEY (id) REFERENCES student(id) ON DELETE CASCADE ON UPDATE CASCADE"/>
+   <table-entry name="expenses" col-data="type varchar(200),amount integer NOT NULL, dat date NOT NULL , personel varchar(200) NOT NULL"/>
+   <table-entry name="enquiries" col-data="id int not null AUTO_INCREMENT PRIMARY KEY,message varchar(200),person varchar(200) NOT NULL, dat date NOT NULL , contact varchar(200) NOT NULL, remarks varchar (250)"/>
+   <table-entry name="instalment" col-data="id varchar(200),amount integer ,paymode varchar (200), receipt varchar(200) PRIMARY KEY , paydate timestamp default CURRENT_TIMESTAMP, FOREIGN KEY (id) REFERENCES student(id) ON DELETE CASCADE ON UPDATE CASCADE"/>
+   <table-entry name="government" col-data="sno int PRIMARY KEY AUTO_INCREMENT,id varchar(200),receipt varchar(200),pdl varchar (10) ,tdb varchar (10),eoc varchar (10) , dl varchar (10), paydate timestamp default CURRENT_TIMESTAMP,FOREIGN KEY (id) REFERENCES student(id) ON DELETE CASCADE ON UPDATE CASCADE"/>
+   <table-entry name="bank" col-data="id int PRIMARY KEY AUTO_INCREMENT, personel varchar(200),type varchar (10),amounr int, dat timestamp default CURRENT_TIMESTAMP"/>
+
+</tables>

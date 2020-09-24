@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="471.0" prefWidth="1041.0" styleClass="VBOX" stylesheets="@../newstudents/css.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enqure.EnqureController">
+  <tabs>
+    <Tab text="New Enquirey">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="VBOX" stylesheets="@../newstudents/css.css">
+               <children>
+                  <AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="1041.0" styleClass="VBOX" stylesheets="@../newstudents/css.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label layoutX="26.0" layoutY="2.0" prefHeight="35.0" prefWidth="200.0" text="Enquiry made on: ">
+                           <font>
+                              <Font name="Algerian" size="18.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="date" layoutX="239.0" layoutY="7.0" prefHeight="25.0" prefWidth="290.0" promptText="pick date" />
+                        <Label layoutX="26.0" layoutY="65.0" prefHeight="25.0" prefWidth="167.0" text="Made by   :">
+                           <font>
+                              <Font name="Algerian" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="name" layoutX="239.0" layoutY="65.0" prefHeight="25.0" prefWidth="294.0" />
+                        <TextField fx:id="contact" layoutX="239.0" layoutY="138.0" prefHeight="25.0" prefWidth="294.0" />
+                        <Label layoutX="15.0" layoutY="134.0" prefHeight="25.0" prefWidth="145.0" text="contact :">
+                           <font>
+                              <Font name="Algerian" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextArea fx:id="message" layoutX="5.0" layoutY="186.0" prefHeight="177.0" prefWidth="598.0" promptText="type message here" />
+                        <JFXButton fx:id="save" layoutX="426.0" layoutY="374.0" onAction="#save" prefHeight="30.0" prefWidth="145.0" styleClass="BUTTON" stylesheets="@../newstudents/css.css" text="Save" />
+                     </children>
+                  </AnchorPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="view" onSelectionChanged="#handleRefresh" text="view Enquiries">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="VBOX" stylesheets="@../newstudents/css.css">
+               <children>
+                  <TableView fx:id="p_display" prefHeight="440.0" prefWidth="1039.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="namecol" prefWidth="314.0" text="ENQUIRY " />
+                        <TableColumn fx:id="pdlcol" minWidth="3.0" prefWidth="238.0" text="MADE BY :" />
+                        <TableColumn fx:id="tdbcol" minWidth="3.0" prefWidth="110.0" text="ENQUIRY DATE" />
+                        <TableColumn fx:id="eoccol" minWidth="3.0" prefWidth="142.0" text="CONTACT" />
+                        <TableColumn fx:id="dlcol" minWidth="3.0" prefWidth="232.0" text="REMARKS" />
+                     </columns>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#remarks" text="ADD REMARKS" />
+                              <MenuItem mnemonicParsing="false" onAction="#edit" text="Edit " />
+                              <MenuItem mnemonicParsing="false" onAction="#handleRefresh" text="refresh" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

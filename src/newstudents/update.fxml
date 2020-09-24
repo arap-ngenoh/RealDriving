@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="1081.0" styleClass="VBOX" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newstudents.UpdateController">
+    <stylesheets>
+        <URL value="@css.css" />
+    </stylesheets>
+   <children>
+      <GridPane fx:id="mainpane" prefHeight="471.0" prefWidth="1081.0" styleClass="VBOX">
+         <children>
+            <Label prefHeight="40.0" prefWidth="152.0" text="First Name" GridPane.rowIndex="1" />
+            <Label prefHeight="35.0" prefWidth="153.0" text="Other Names" GridPane.rowIndex="3" />
+            <Label prefHeight="40.0" prefWidth="145.0" text="Id Number" GridPane.rowIndex="5" />
+            <Label prefHeight="44.0" prefWidth="124.0" text="Phone Number" GridPane.rowIndex="7" />
+            <Label prefHeight="52.0" prefWidth="150.0" text="PDL Number" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label prefHeight="54.0" prefWidth="122.0" text="TDB Number" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label prefHeight="38.0" prefWidth="113.0" text="DL Number" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="fname" prefHeight="35.0" prefWidth="396.0" GridPane.rowIndex="2" />
+            <TextField fx:id="names" prefHeight="38.0" prefWidth="396.0" GridPane.rowIndex="4" />
+            <TextField fx:id="idno" prefHeight="44.0" prefWidth="396.0" GridPane.rowIndex="6" />
+            <TextField fx:id="phone" prefHeight="34.0" prefWidth="396.0" GridPane.rowIndex="8" />
+            <TextField fx:id="pdl" prefHeight="38.0" prefWidth="406.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="tdb" prefHeight="34.0" prefWidth="406.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="dl" prefHeight="33.0" prefWidth="406.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="10" GridPane.rowSpan="2">
+               <children>
+                  <JFXButton fx:id="save" onAction="#save" prefHeight="41.0" prefWidth="115.0" styleClass="BUTTON" stylesheets="@css.css" text="UPDATE" />
+               </children>
+            </HBox>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="700.0" text="UPDATE  STUDENT DETAILS" GridPane.columnSpan="3">
+               <font>
+                  <Font name="Algerian" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="category" prefHeight="31.0" prefWidth="245.0" promptText="Category of Student" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.0" minWidth="10.0" prefWidth="380.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="245.0" minWidth="10.0" prefWidth="33.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="406.0" minWidth="10.0" prefWidth="287.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane prefHeight="474.0" prefWidth="939.0" styleClass="VBOX" stylesheets="@../newstudents/css.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="government.GovenmentController">
+  <tabs>
+    <Tab fx:id="govntab" onSelectionChanged="#govntab" text="student payments to government">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="VBOX" stylesheets="@../newstudents/css.css">
+               <children>
+                  <Group layoutX="-113.0" layoutY="-66.0" styleClass="VBOX" stylesheets="@../newstudents/css.css">
+                     <children>
+                        <GridPane alignment="CENTER" layoutX="119.0" layoutY="66.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="445.0" prefWidth="676.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="37.0" prefWidth="500.0" text="PDL Fee" GridPane.rowIndex="2" />
+                              <Label alignment="CENTER" prefHeight="35.0" prefWidth="500.0" text="TBD Fee" GridPane.rowIndex="4" />
+                              <Label alignment="CENTER" prefHeight="34.0" prefWidth="500.0" text="DL Fee" GridPane.rowIndex="6" />
+                              <HBox alignment="CENTER" prefHeight="100.0" GridPane.rowIndex="11">
+                                 <children>
+                                    <JFXButton fx:id="save" onAction="#save" prefHeight="37.0" prefWidth="155.0" styleClass="BUTTON" stylesheets="@../newstudents/css.css" text="SAVE" />
+                                 </children>
+                              </HBox>
+                              <TextField fx:id="pdl2" prefHeight="44.0" prefWidth="676.0" GridPane.rowIndex="3" />
+                              <TextField fx:id="tbd2" prefHeight="40.0" prefWidth="676.0" GridPane.rowIndex="5" />
+                              <TextField fx:id="dl2" prefHeight="43.0" prefWidth="676.0" GridPane.rowIndex="7" />
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <TextField fx:id="id2" prefHeight="37.0" prefWidth="382.0" />
+                                    <DatePicker fx:id="date" prefHeight="37.0" prefWidth="301.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="38.0" prefWidth="404.0" text="Student ID" />
+                                    <Label alignment="CENTER" prefHeight="54.0" prefWidth="321.0" text="Date Of Payment" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="9">
+                                 <children>
+                                    <TextField fx:id="eoc2" prefHeight="37.0" prefWidth="295.0" />
+                                    <TextField fx:id="RECEIPT" prefHeight="37.0" prefWidth="388.0" />
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="8">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="37.0" prefWidth="291.0" text="EOC Fee" />
+                                    <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="37.0" prefWidth="291.0" text="Receipt Number" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </Group>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="viewgovntpay" onSelectionChanged="#viewgovntpay" text="View students payments">
+         <content>
+            <StackPane fx:id="rootPane" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane fx:id="contentPane" minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="802.0" styleClass="VBOX" stylesheets="@../newstudents/css.css">
+                     <children>
+                        <SplitPane dividerPositions="0.8815489749430524" layoutX="77.0" layoutY="8.0" orientation="VERTICAL" prefHeight="443.0" prefWidth="937.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <TableView fx:id="governmentview" prefHeight="384.0" prefWidth="933.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <columns>
+                                          <TableColumn fx:id="namecol" prefWidth="417.0" text="STUDENT NAME" />
+                                          <TableColumn fx:id="pdlcol" minWidth="3.0" prefWidth="125.0" text="PDL FEE PAID" />
+                                          <TableColumn fx:id="tdbcol" minWidth="3.0" prefWidth="120.0" text="TDB FEE PAID" />
+                                          <TableColumn fx:id="eoccol" minWidth="3.0" prefWidth="142.0" text="EOC FEE PAID" />
+                                          <TableColumn fx:id="dlcol" minWidth="3.0" prefWidth="132.0" text="DL FEE PAID" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <HBox alignment="CENTER" layoutX="22.0" layoutY="-50.0" prefHeight="49.0" prefWidth="933.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <JFXButton fx:id="print" buttonType="RAISED" onAction="#print" prefHeight="48.0" prefWidth="136.0" ripplerFill="WHITE" text="PRINT ">
+                                             <font>
+                                                <Font name="Algerian" size="15.0" />
+                                             </font>
+                                          </JFXButton>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </StackPane>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>

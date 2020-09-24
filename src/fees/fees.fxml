@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="471.0" prefWidth="1020.0" styleClass="VBOX" stylesheets="@../newstudents/css.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fees.FeesController">
+  <tabs>
+      <Tab fx:id="mpya" text=" Fee payment">
+         <content>
+            <AnchorPane prefHeight="471.0" prefWidth="1041.0" styleClass="VBOX" stylesheets="@../newstudents/css.css">
+               <children>
+                  <GridPane prefHeight="440.0" prefWidth="1039.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="ALWAYS" maxWidth="349.0" minWidth="10.0" prefWidth="346.0" />
+                        <ColumnConstraints hgrow="NEVER" maxWidth="195.0" minWidth="10.0" prefWidth="58.0" />
+                      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="223.0" percentWidth="40.0" prefWidth="193.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="344.0" text="              Mode of Payment" />
+                        <ComboBox fx:id="paymode" prefHeight="25.0" prefWidth="342.0" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="504.0" text="Id Number" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" prefHeight="34.0" prefWidth="504.0" text="Amount" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="500.0" text="Vehicle Hire Fee" GridPane.columnIndex="2" />
+                        <TextField fx:id="vhire" prefHeight="38.0" prefWidth="333.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="223.0" text="Registration" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="registration" prefHeight="38.0" prefWidth="333.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="7">
+                           <children>
+                              <JFXButton fx:id="save" onAction="#save" prefHeight="25.0" prefWidth="259.0" styleClass="BUTTON" stylesheets="@../newstudents/css.css" text="SAVE" />
+                           </children>
+                        </HBox>
+                        <TextField fx:id="idnumber" prefHeight="54.0" prefWidth="349.0" GridPane.rowIndex="3" />
+                        <TextField fx:id="amount" prefHeight="53.0" prefWidth="349.0" GridPane.rowIndex="5" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <children>
+                              <TextField fx:id="receipt" prefHeight="32.0" prefWidth="208.0" />
+                              <DatePicker fx:id="paydate" prefHeight="32.0" prefWidth="198.0" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="32.0" prefWidth="196.0" text=" Receipt number" />
+                              <Label alignment="CENTER" layoutX="206.0" layoutY="10.0" prefHeight="32.0" prefWidth="196.0" text="payment date" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="441.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="print.Print1Controller">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <AnchorPane id="AnchorPane" fx:id="contentpane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="table" layoutX="123.0" layoutY="41.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <columns>
+                        <TableColumn fx:id="namecol" prefWidth="75.0" text="fname" />
+                        <TableColumn fx:id="amountcol" prefWidth="75.0" text="AMOUNT RECIEVED" />
+                        <TableColumn fx:id="datecol" prefWidth="75.0" text="DATE" />
+                        <TableColumn fx:id="modecol" prefWidth="75.0" text="MODE" />
+                        <TableColumn fx:id="personelcol" prefWidth="75.0" text="PERSONEL" />
+                        <TableColumn fx:id="typecol" prefWidth="75.0" text="TYPE" />
+                        <TableColumn fx:id="amouncol" prefWidth="75.0" text="AMOUNT" />
+                        <TableColumn fx:id="datcol" prefWidth="75.0" text="DATE" />
+                     </columns>
+                  </TableView>
+               </children>
+               <stylesheets>
+                  <URL value="@/newstudents/css.css" />
+               </stylesheets>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <JFXButton fx:id="print" onAction="#printrepor" prefHeight="25.0" prefWidth="113.0" text="PRINT" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="92.0" prefWidth="697.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="53.0" prefWidth="697.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="60.0" prefWidth="859.0">
+                           <children>
+                              <Label prefHeight="35.0" prefWidth="131.0" text="RECONCILIATION TYPE" />
+                              <ComboBox fx:id="recotype" prefHeight="36.0" prefWidth="254.0" />
+                              <Label prefHeight="31.0" prefWidth="68.0" text="FROM : " />
+                              <DatePicker fx:id="fromdate" onAction="#loaddate" prefHeight="31.0" prefWidth="172.0" HBox.hgrow="ALWAYS" />
+                              <Label prefHeight="31.0" prefWidth="25.0" />
+                              <JFXButton fx:id="loadreco" buttonType="RAISED" onAction="#loadreco" prefHeight="47.0" prefWidth="118.0" text="Button">
+                                 <graphic>
+                                    <ImageView fitHeight="39.0" fitWidth="104.0" onDragDetected="#loadvalue" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../icons/refresh.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="31.0" prefWidth="939.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="392.0" text="   CASH   RECONSILIATION FOR THE PERION ENDING ON :">
+                                 <font>
+                                    <Font name="Algerian" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="date" prefHeight="37.0" prefWidth="248.0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="328.0" prefWidth="600.0" styleClass="VBOX" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="real.settings.AdminsetController">
+    <stylesheets>
+        <URL value="@/newstudents/css.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="174.0" layoutY="-10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="600.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label prefHeight="64.0" prefWidth="600.0" text="                                                       EDIT USERNAME AND PASSWORD ">
+                     <font>
+                        <Font name="Algerian" size="15.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <JFXTextField fx:id="adminusername" maxWidth="600.0" minWidth="600.0" prefHeight="39.0" prefWidth="600.0" promptText="enter username" />
+            <JFXPasswordField fx:id="newpass" maxWidth="600.0" minWidth="600.0" prefHeight="41.0" prefWidth="600.0" promptText="type new password" />
+            <HBox prefHeight="46.0" prefWidth="600.0">
+               <children>
+                  <JFXButton fx:id="save" onAction="#save" prefHeight="25.0" prefWidth="187.0" styleClass="BUTTON" stylesheets="@../../newstudents/css.css" text="save changes" />
+                  <JFXButton fx:id="cancel" layoutX="10.0" layoutY="10.0" onAction="#cancel" prefHeight="25.0" prefWidth="187.0" styleClass="BUTTON" stylesheets="@../../newstudents/css.css" text="cancels" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

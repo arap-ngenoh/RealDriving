@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="394.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="backup.BackupController">
+    <stylesheets>
+        <URL value="@/newstudents/css.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="120.0" layoutY="6.0" prefHeight="273.0" prefWidth="359.0" styleClass="VBOX" stylesheets="@../newstudents/css.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="66.0" prefWidth="392.0">
+               <children>
+                  <TextField fx:id="backuppath" prefHeight="33.0" prefWidth="267.0" />
+                  <JFXButton fx:id="browserbpath" buttonType="RAISED" onAction="#browserbpath" prefHeight="32.0" prefWidth="125.0" ripplerFill="WHITE" styleClass="BUTTON" stylesheets="@../newstudents/css.css" text="Back Up To">
+                     <font>
+                        <Font name="Algerian" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="359.0">
+               <children>
+                  <JFXButton fx:id="backup" buttonType="RAISED" onAction="#backup" prefHeight="32.0" prefWidth="117.0" ripplerFill="WHITE" styleClass="BUTTON" stylesheets="@../newstudents/css.css" text="Start back up">
+                     <font>
+                        <Font name="Algerian" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="backupstatus" prefHeight="38.0" prefWidth="266.0" textFill="#13d730">
+                     <font>
+                        <Font name="Algerian" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="44.0" prefHeight="80.0" prefWidth="359.0">
+               <children>
+                  <TextField fx:id="restorepath" prefHeight="39.0" prefWidth="267.0" />
+                  <JFXButton fx:id="browserestore" buttonType="RAISED" onAction="#browserestore" prefHeight="39.0" prefWidth="122.0" ripplerFill="WHITE" styleClass="BUTTON" stylesheets="@../newstudents/css.css" text="Restore from: ">
+                     <font>
+                        <Font name="Algerian" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="359.0">
+               <children>
+                  <JFXButton fx:id="restore" buttonType="RAISED" onAction="#restore" prefHeight="37.0" prefWidth="93.0" ripplerFill="WHITE" styleClass="BUTTON" stylesheets="@../newstudents/css.css" text="Restore now">
+                     <font>
+                        <Font name="Algerian" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="restorestatus" prefHeight="33.0" prefWidth="301.0" textFill="#13d730">
+                     <font>
+                        <Font name="Algerian" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

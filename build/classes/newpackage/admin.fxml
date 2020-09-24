@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="98.0" prefWidth="403.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newpackage.AdminController">
+   <children>
+      <VBox layoutX="152.0" prefHeight="171.0" prefWidth="403.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="username" promptText="Username" />
+            <JFXPasswordField fx:id="pass" />
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="403.0">
+               <children>
+                  <JFXButton onAction="#handleLoginButtonAction" prefHeight="36.0" prefWidth="157.0" text="Login" />
+                  <JFXButton onAction="#handleCancelButtonAction" prefHeight="35.0" prefWidth="140.0" text="Cancel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

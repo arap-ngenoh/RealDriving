@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="359.0" prefWidth="680.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="enqure.RemarksController">
+    <stylesheets>
+        <URL value="@/newstudents/css.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="196.0" layoutY="-55.0" prefHeight="359.0" prefWidth="680.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="680.0" text="                                             aDD  REMARKS ">
+               <font>
+                  <Font name="Algerian" size="14.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="35.0" prefWidth="680.0">
+               <children>
+                  <Label fx:id="label" prefHeight="43.0" prefWidth="680.0" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font name="Algerian" size="15.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <TextArea fx:id="message2" prefHeight="141.0" prefWidth="680.0" promptText="ADD REMARKS" />
+            <JFXButton fx:id="save1" onAction="#save" prefHeight="30.0" prefWidth="145.0" styleClass="BUTTON" stylesheets="@../newstudents/css.css" text="Save" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

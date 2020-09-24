@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane fx:id="holder" dividerPositions="0.1552346570397112" orientation="VERTICAL" prefHeight="556.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="users.DailyController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="59.0" prefWidth="859.0" SplitPane.resizableWithParent="false">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" layoutY="35.0" prefHeight="60.0" prefWidth="859.0" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label prefHeight="35.0" prefWidth="131.0" text="RECONCILIATION TYPE" />
+                  <ComboBox fx:id="recotype" prefHeight="36.0" prefWidth="254.0" />
+                  <Label prefHeight="31.0" prefWidth="68.0" text="FROM : " />
+                  <DatePicker fx:id="fromdate" onAction="#loaddate" prefHeight="31.0" prefWidth="172.0" HBox.hgrow="ALWAYS" />
+                  <Label prefHeight="31.0" prefWidth="25.0" />
+                  <JFXButton fx:id="loadreco" buttonType="RAISED" onAction="#loadreco" prefHeight="47.0" prefWidth="118.0" text="Button">
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="104.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../icons/refresh.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#bank_reports" prefHeight="60.0" prefWidth="102.0" text="Bank Reports">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_CENTER" layoutY="54.0" prefHeight="31.0" prefWidth="939.0">
+               <children>
+                  <Label prefHeight="30.0" prefWidth="403.0" text="    CASH  RECONSILIATION FOR THE PERION ENDING ON :">
+                     <font>
+                        <Font name="Algerian" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="date" prefHeight="37.0" prefWidth="248.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children></AnchorPane>
+    <AnchorPane fx:id="holder1" minHeight="0.0" minWidth="0.0" prefHeight="453.0" prefWidth="859.0">
+         <children>
+            <BorderPane prefHeight="465.0" prefWidth="859.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                
+               </center>
+               <bottom>
+                  <VBox prefHeight="75.0" prefWidth="859.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="36.0" prefWidth="859.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="168.0" text="          Total  income: " HBox.hgrow="SOMETIMES">
+                                 <font>
+                                    <Font name="Algerian" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="totalexpense" editable="false" prefHeight="25.0" prefWidth="265.0" HBox.hgrow="ALWAYS" />
+                              <Label layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="171.0" text="  Total expense :">
+                                 <font>
+                                    <Font name="Algerian" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="totalincome" layoutX="181.0" layoutY="10.0" prefHeight="25.0" prefWidth="174.0" HBox.hgrow="ALWAYS" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="66.0" prefWidth="859.0" VBox.vgrow="SOMETIMES">
+                           <children>
+                              <JFXButton fx:id="print1" buttonType="RAISED" contentDisplay="TOP" onAction="#printreport" prefHeight="62.0" prefWidth="206.0" text="Print">
+                                 <font>
+                                    <Font name="Algerian" size="15.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="21.0" fitWidth="61.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../icons/print.jpg" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></JFXButton>
+                              <TextField fx:id="balcar" />
+                              <Label prefHeight="25.0" prefWidth="236.0" text="BALANCE CARRIED FOWARD   :   ">
+                                 <font>
+                                    <Font name="Algerian" size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </bottom>
+               <center>
+                  <SplitPane dividerPositions="0.456242707117853" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <StackPane prefHeight="385.0" prefWidth="252.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+                                       <columns>
+                                          <TableColumn fx:id="incomefromcol" prefWidth="160.0" text="Received From" />
+                                          <TableColumn fx:id="amountreceivedcol" prefWidth="103.0" text="Amount" />
+                                          <TableColumn fx:id="datcol" prefWidth="126.0" text="Date" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <StackPane prefHeight="385.0" prefWidth="599.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <TableView fx:id="tableView1" prefHeight="200.0" prefWidth="200.0">
+                                       <columns>
+                                          <TableColumn fx:id="expensecol" prefWidth="153.0" text="Expense " />
+                                          <TableColumn fx:id="spendbycol" prefWidth="150.0" text="Spend by " />
+                                          <TableColumn fx:id="amountcol" text="Amount" />
+                                          <TableColumn fx:id="datecol" text="Date" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </center>
+            </BorderPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

@@ -1,0 +1,198 @@
+-- MySQL dump 10.13  Distrib 5.7.18, for Win64 (x86_64)
+--
+-- Host: localhost    Database: realdriving
+-- ------------------------------------------------------
+-- Server version	5.7.18-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `enquiries`
+--
+
+DROP TABLE IF EXISTS `enquiries`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `enquiries` (
+  `message` varchar(200) DEFAULT NULL,
+  `person` varchar(200) NOT NULL,
+  `dat` date NOT NULL,
+  `contact` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `enquiries`
+--
+
+LOCK TABLES `enquiries` WRITE;
+/*!40000 ALTER TABLE `enquiries` DISABLE KEYS */;
+INSERT INTO `enquiries` VALUES ('full course','john','2018-10-03','0987');
+/*!40000 ALTER TABLE `enquiries` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `expenses`
+--
+
+DROP TABLE IF EXISTS `expenses`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `expenses` (
+  `type` varchar(200) DEFAULT NULL,
+  `amount` int(11) NOT NULL,
+  `dat` date NOT NULL,
+  `personel` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `expenses`
+--
+
+LOCK TABLES `expenses` WRITE;
+/*!40000 ALTER TABLE `expenses` DISABLE KEYS */;
+INSERT INTO `expenses` VALUES ('salaries and wadges',3000,'2018-10-03','steph'),('Printing Expense',1000,'2018-10-03','Steve'),('misleneous expenses',1200,'2018-10-04','Steve'),('vehicle maintaince',1299,'2018-10-03','STEVE');
+/*!40000 ALTER TABLE `expenses` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `fees`
+--
+
+DROP TABLE IF EXISTS `fees`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `fees` (
+  `sno` int(11) NOT NULL AUTO_INCREMENT,
+  `id` varchar(200) DEFAULT NULL,
+  `registration` int(11) DEFAULT NULL,
+  `vhire` int(11) DEFAULT NULL,
+  `paydate` date DEFAULT NULL,
+  PRIMARY KEY (`sno`),
+  KEY `id` (`id`),
+  CONSTRAINT `fees_ibfk_1` FOREIGN KEY (`id`) REFERENCES `student` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `fees`
+--
+
+LOCK TABLES `fees` WRITE;
+/*!40000 ALTER TABLE `fees` DISABLE KEYS */;
+INSERT INTO `fees` VALUES (1,'1',1000,1000,'2018-10-03'),(2,'2',1000,1000,'2018-10-03'),(3,'1',300,300,'2018-10-03'),(4,'2',500,500,'2018-10-03'),(5,'1',1000,1000,'2018-10-03'),(6,'123456789',1000,1000,'2018-10-03'),(7,'1234567',1000,1000,'2018-10-03'),(8,'1234567',0,0,'2018-10-03');
+/*!40000 ALTER TABLE `fees` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `government`
+--
+
+DROP TABLE IF EXISTS `government`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `government` (
+  `sno` int(11) NOT NULL AUTO_INCREMENT,
+  `id` varchar(200) DEFAULT NULL,
+  `pdl` varchar(10) DEFAULT NULL,
+  `tdb` varchar(10) DEFAULT NULL,
+  `eoc` varchar(10) DEFAULT NULL,
+  `dl` varchar(10) DEFAULT NULL,
+  `paydate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`sno`),
+  KEY `id` (`id`),
+  CONSTRAINT `government_ibfk_1` FOREIGN KEY (`id`) REFERENCES `student` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `government`
+--
+
+LOCK TABLES `government` WRITE;
+/*!40000 ALTER TABLE `government` DISABLE KEYS */;
+INSERT INTO `government` VALUES (1,'1234567','700','700','700','800','2018-10-02 21:00:00');
+/*!40000 ALTER TABLE `government` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `instalment`
+--
+
+DROP TABLE IF EXISTS `instalment`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `instalment` (
+  `id` varchar(200) DEFAULT NULL,
+  `amount` int(11) DEFAULT NULL,
+  `paymode` varchar(200) DEFAULT NULL,
+  `receipt` varchar(200) NOT NULL,
+  `paydate` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`receipt`),
+  KEY `id` (`id`),
+  CONSTRAINT `instalment_ibfk_1` FOREIGN KEY (`id`) REFERENCES `student` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `instalment`
+--
+
+LOCK TABLES `instalment` WRITE;
+/*!40000 ALTER TABLE `instalment` DISABLE KEYS */;
+INSERT INTO `instalment` VALUES ('123456789',6000,'Pay Bill','00099','2018-10-02 21:00:00'),('1234567',10000,'cash','gh6798','2018-10-02 21:00:00'),('1',5000,'cash','HSAGYUT','2018-10-02 21:00:00'),('1234567',2000,'cash','trujnb','2018-10-02 21:00:00');
+/*!40000 ALTER TABLE `instalment` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `student`
+--
+
+DROP TABLE IF EXISTS `student`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `student` (
+  `id` varchar(200) NOT NULL,
+  `regnum` varchar(200) DEFAULT NULL,
+  `fname` varchar(200) DEFAULT NULL,
+  `names` varchar(200) DEFAULT NULL,
+  `phone` varchar(100) DEFAULT NULL,
+  `tdbnumber` varchar(100) DEFAULT NULL,
+  `pdlnumber` varchar(100) DEFAULT NULL,
+  `dlnumber` varchar(100) DEFAULT NULL,
+  `fees` int(11) NOT NULL,
+  `category` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `student`
+--
+
+LOCK TABLES `student` WRITE;
+/*!40000 ALTER TABLE `student` DISABLE KEYS */;
+INSERT INTO `student` VALUES ('1','123','peter ','kirimi','0722765765','','ASE55','',12000,'C1 Category'),('1234567','56','mwangi','joseph','0867554','','ghtr','',12000,'C1 Category'),('123456789','001','jackinder','nguu njuki','087665544','','aaaa76','',10900,'B1 category'),('2','252','matthew','tonui','0733498756','','ASEW43','',10500,'D1 Category'),('4','234','kamau ','njoroge','2345','','cvzxbnb,','',2345,'B1 category');
+/*!40000 ALTER TABLE `student` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-10-03 21:52:08

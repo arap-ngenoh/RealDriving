@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Sep 25 23:58:07 EAT 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-0166-1286-5c2a-000004b33c50 
+on database directory E:\Projects\RealDriving\database with class loader sun.misc.Launcher$AppClassLoader@55f96302 
+Loaded from file:/E:/Projects/RealDriving/dist/run792983976/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_144-b01
+user.dir=E:\Projects\RealDriving
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

@@ -1,0 +1,25 @@
+
+
+.VBOX {
+    -fx-fill: #ffffff;
+    -fx-highlight-text-fill: #ff9999;
+    -fx-border-color:#000000
+     
+}
+.BUTTON{
+   
+    -fx-background-color: #003399;
+    -fx-cursor: hand;
+    -fx-fill: #ffffff;
+    -fx-border-color: #333300;
+    -fx-text-fill:#ffffff;
+    -fx-border-radius: 8px;
+    -fx-padding: 2px;
+   
+}
+.BUTTON:hover
+{
+    -fx-background-color:#003366
+  
+    
+}
